@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js"></script>
     <link rel="stylesheet" href="circles.css">
     <script type="text/paperscript" canvas="myCanvas">
-
+    
         var keyData = {
             q: {
                 sound: new Howl({
@@ -180,6 +180,7 @@
             newCircle.fillColor = keyData[event.key].color;
             keyData[event.key].sound.play();
             circles.push(newCircle);
+            text.style.display = 'none';
         }
     }
 
@@ -202,8 +203,10 @@
       }
     
     </script>
+    
 </head>
 <body>
+    <h3 id="text">Press any key, A to Z, and turn up speakers</h3>
     <canvas id="myCanvas" resize></canvas>
 </body>
 </html>

@@ -6,4 +6,12 @@ canvas {
 body, html {
     height: 100%;
     margin: 0;
+    background-color: black;
+}
+
+#text {
+    color: gray;
+    text-align: center;
+    font-family: Helvetica;
+    margin-top: 100px;
 }
